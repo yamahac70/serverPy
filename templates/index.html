@@ -1,0 +1,19 @@
+{% args ledValor %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED</title>
+</head>
+<body>
+    {% if ledValor == 1 %}
+        <h1>LED ON</h1>
+    {% endif %}
+    {% if ledValor == 0 %}
+        <h1>LED OFF</h1>
+    {% endif %}
+    <a href="/ledOn">   LED ON</a>
+    <a href="/ledOff">  LED OFF</a>
+</body>
+</html>
